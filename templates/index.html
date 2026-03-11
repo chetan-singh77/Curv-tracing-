@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>BSc Curve Expert</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="main-card">
+        <h1>🔍 Curve Tracing Expert AI</h1>
+        <div class="input-area">
+            <input type="text" id="eq" placeholder="समीकरण लिखें (जैसे y^2 = x^3)" value="y^2 = x^3">
+            <div class="slider-box">
+                <label>Parameter 'a': </label>
+                <input type="range" id="p" min="1" max="10" value="2">
+            </div>
+            <button onclick="startTracing()">Trace Now 🚀</button>
+        </div>
+        <div id="results"></div>
+        <div id="plot"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
